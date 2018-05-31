@@ -92,9 +92,6 @@ spec:
               mountPath: "/var/lib/grafana"
               subPath: {{ .Values.persistence.subPath }}
           ports:
-            - name: service
-              containerPort: {{ .Values.service.port }}
-              protocol: TCP
             - name: grafana
               containerPort: 3000
               protocol: TCP
